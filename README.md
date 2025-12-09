@@ -56,8 +56,8 @@ git clone https://github.com/divyanshchawlaa/WeatherForecastApp.git
 
 ## Screenshots
 
-![App Screenshot](link-to-your-screenshot1)
-![App Screenshot](link-to-your-screenshot2)
+![App Screenshot](images/screenshot1.png)
+![App Screenshot](images/screenshot2.png)
 
 ## Demo Video
 
