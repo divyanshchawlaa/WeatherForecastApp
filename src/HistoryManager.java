@@ -1,37 +1,45 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 public class HistoryManager {
-    private List<WeatherData> history;
 
-    public HistoryManager() {
-        history = new ArrayList<>();
-    }
+    private static final String FILE = "history.txt";
 
-    // Add a WeatherData entry to history
-    public void addToHistory(WeatherData wd) {
-        history.add(wd);
-    }
-
-    // Get the full history list
-    public List<WeatherData> getHistory() {
-        return history;
-    }
-
-    // Print all history entries to the console
-    public void printHistory() {
-        if (history.isEmpty()) {
-            System.out.println("No history available.");
-            return;
+    public void saveSearch(String city) {
+        try (FileWriter fw = new FileWriter(FILE, true)) {
+            fw.write(city + "\n");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        System.out.println("=== Weather History ===");
-        for (WeatherData wd : history) {
-            System.out.println(
-                    wd.getCity() + " | " +
-                            wd.getDate() + " | " +
-                            String.format("%.1f°C", wd.getTemperature()) + " | " +
-                            wd.getCondition()
-            );
+    }
+
+    public List<String> loadHistory() {
+        List<String> list = new ArrayList<>();
+
+        File f = new File(FILE);
+        if (!f.exists()) return list;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(f))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (!line.trim().isEmpty()) list.add(line.trim());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+        return list;
+    }
+
+    // For WeatherAppGUI
+    public String getHistoryDialogText() {
+        List<String> h = loadHistory();
+        if (h.isEmpty()) return "No search history yet.";
+
+        StringBuilder sb = new StringBuilder("Your Search History:\n\n");
+        for (String city : h) {
+            sb.append("• ").append(city).append("\n");
+        }
+        return sb.toString();
     }
 }

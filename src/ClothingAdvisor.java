@@ -1,9 +1,9 @@
 public class ClothingAdvisor {
-    public static String suggestClothes(double temp) {
-        if (temp <= 0) return "🧥 Heavy Coat";
-        if (temp <= 10) return "🧥 Jacket";
-        if (temp <= 20) return "👕 Light Jacket";
-        if (temp <= 30) return "👕 T-Shirt";
-        return "🩳 Shorts";
+
+    public static String recommend(double avgTemp) {
+        if (avgTemp < 0) return "Heavy Jacket 🧥";
+        if (avgTemp < 10) return "Jacket";
+        if (avgTemp < 20) return "Light Layer";
+        return "T-Shirt 👕";
     }
 }

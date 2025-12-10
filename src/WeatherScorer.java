@@ -1,8 +1,15 @@
 public class WeatherScorer {
-    public static int getScore(WeatherData wd) {
-        int score = 100;
-        if (wd.getTemperature() < 0 || wd.getTemperature() > 35) score -= 30;
-        if (wd.getCondition().contains("Rain")) score -= 20;
-        return score;
+
+    // Simple scoring function (0–10)
+    public static int scoreTemperature(double temp) {
+        if (temp < 0) return 2;
+        if (temp < 10) return 5;
+        if (temp < 20) return 8;
+        return 10;
+    }
+
+    // Score for daily weather
+    public static int scoreDaily(double min, double max) {
+        return scoreTemperature((min + max) / 2.0);
     }
 }

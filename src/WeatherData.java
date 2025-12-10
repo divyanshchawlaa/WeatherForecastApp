@@ -1,33 +1,49 @@
+import java.util.List;
+
 public class WeatherData {
+
     private String city;
     private String date;
-    private double temperature;
-    private double humidity;
-    private double windSpeed;
-    private String condition;
-    private String icon;
 
-    public WeatherData(String city, String date, double temperature, double humidity, double windSpeed, String condition) {
+    private double tempMax;
+    private double tempMin;
+    private double currentTemp;
+    private String condition;
+
+    private int score;
+    private String clothingAdvice;
+
+    private List<HourlyWeatherData> hourlyForecast;
+    private List<DailyWeatherData> dailyForecast;
+
+    public WeatherData(String city, String date,
+                       double tempMax, double tempMin,
+                       double currentTemp, String condition,
+                       int score, String clothingAdvice,
+                       List<HourlyWeatherData> hourlyForecast,
+                       List<DailyWeatherData> dailyForecast) {
+
         this.city = city;
         this.date = date;
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.windSpeed = windSpeed;
+        this.tempMax = tempMax;
+        this.tempMin = tempMin;
+        this.currentTemp = currentTemp;
         this.condition = condition;
+        this.score = score;
+        this.clothingAdvice = clothingAdvice;
+        this.hourlyForecast = hourlyForecast;
+        this.dailyForecast = dailyForecast;
     }
 
-    // Getters and setters
     public String getCity() { return city; }
     public String getDate() { return date; }
-    public double getTemperature() { return temperature; }
-    public double getHumidity() { return humidity; }
-    public double getWindSpeed() { return windSpeed; }
+    public double getTempMax() { return tempMax; }
+    public double getTempMin() { return tempMin; }
+    public double getCurrentTemp() { return currentTemp; }
     public String getCondition() { return condition; }
-    public String getIcon() { return icon; }
-    public void setIcon(String icon) { this.icon = icon; }
+    public int getScore() { return score; }
+    public String getClothingAdvice() { return clothingAdvice; }
 
-    @Override
-    public String toString() {
-        return date + " | " + temperature + "°C | " + condition;
-    }
+    public List<HourlyWeatherData> getHourlyForecast() { return hourlyForecast; }
+    public List<DailyWeatherData> getDailyForecast() { return dailyForecast; }
 }

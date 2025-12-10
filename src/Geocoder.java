@@ -1,36 +1,49 @@
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class Geocoder {
-    public static String[] getCoordinates(String place) {
-        try {
-            String url = "https://geocoding-api.open-meteo.com/v1/search?name=" + place;
-            HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(url))
-                    .GET()
-                    .build();
 
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            if (response.statusCode() != 200) return null;
+    public static class GeoResult {
+        public double lat;
+        public double lon;
 
-            JSONObject obj = new JSONObject(response.body());
-            JSONArray results = obj.optJSONArray("results");
-            if (results == null || results.length() == 0) return null;
-
-            // Take the first result (works for city, state, town)
-            JSONObject first = results.getJSONObject(0);
-            String lat = String.valueOf(first.getDouble("latitude"));
-            String lon = String.valueOf(first.getDouble("longitude"));
-            return new String[]{lat, lon};
-
-        } catch (Exception e) {
-            System.out.println("Error fetching coordinates: " + e.getMessage());
-            return null;
+        public GeoResult(double lat, double lon) {
+            this.lat = lat;
+            this.lon = lon;
         }
+    }
+
+    public static GeoResult geocode(String city) throws Exception {
+        String query = city.replace(" ", "+");
+        String urlStr = "https://geocoding-api.open-meteo.com/v1/search?name=" + query + "&count=1";
+
+        URL url = new URL(urlStr);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        StringBuilder sb = new StringBuilder();
+        String line;
+
+        while ((line = br.readLine()) != null) sb.append(line);
+        br.close();
+
+        JSONObject root = new JSONObject(sb.toString());
+
+        if (!root.has("results")) return null;
+
+        JSONArray arr = root.getJSONArray("results");
+        if (arr.length() == 0) return null;
+
+        JSONObject obj = arr.getJSONObject(0);
+
+        double lat = obj.getDouble("latitude");
+        double lon = obj.getDouble("longitude");
+
+        return new GeoResult(lat, lon);
     }
 }
