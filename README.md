@@ -78,12 +78,11 @@ git clone https://github.com/divyanshchawlaa/WeatherForecastApp.git
 
 ## Screenshots
 
-![App Screenshot](images/screenshot1)
-![App Screenshot](images/screenshot2)
-![App Screenshot](images/screenshot3)
+![App Screenshot](images/screenshot1.png)
+![App Screenshot](images/screenshot2.png)
+![App Screenshot](images/screenshot3.png)
   
   
-
 ## Demo Video
 
 [Watch the demo video](link-to-your-video)
