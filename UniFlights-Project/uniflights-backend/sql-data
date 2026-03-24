@@ -1,0 +1,49 @@
+CREATE TABLE universities (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    email_domain VARCHAR(50),
+    country VARCHAR(50)
+);
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password_hash TEXT,
+    university_id INT REFERENCES universities(id),
+    verified BOOLEAN DEFAULT FALSE,
+    role VARCHAR(20) DEFAULT 'student',
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+INSERT INTO universities (name, email_domain, country) VALUES
+('University of Berlin', 'uni-berlin.de', 'Germany'),
+('Technical University Munich', 'tum.de', 'Germany'),
+('LMU Munich', 'lmu.de', 'Germany'),
+('RWTH Aachen University', 'rwth-aachen.de', 'Germany'),
+
+('MIT', 'mit.edu', 'USA'),
+('Harvard University', 'harvard.edu', 'USA'),
+('Stanford University', 'stanford.edu', 'USA'),
+('University of California Berkeley', 'berkeley.edu', 'USA'),
+
+('University of Oxford', 'ox.ac.uk', 'UK'),
+('University of Cambridge', 'cam.ac.uk', 'UK'),
+('Imperial College London', 'imperial.ac.uk', 'UK'),
+
+('University of Toronto', 'utoronto.ca', 'Canada'),
+('University of British Columbia', 'ubc.ca', 'Canada'),
+
+('ETH Zurich', 'ethz.ch', 'Switzerland'),
+('EPFL', 'epfl.ch', 'Switzerland'),
+
+('National University of Singapore', 'nus.edu.sg', 'Singapore'),
+('Nanyang Technological University', 'ntu.edu.sg', 'Singapore'),
+
+('University of Melbourne', 'unimelb.edu.au', 'Australia'),
+('University of Sydney', 'sydney.edu.au', 'Australia'),
+
+('Indian Institute of Technology Delhi', 'iitd.ac.in', 'India'),
+('Indian Institute of Technology Bombay', 'iitb.ac.in', 'India');
+
+SELECT * FROM universities;

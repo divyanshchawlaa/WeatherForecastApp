@@ -1,0 +1,58 @@
+body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+  background: #003580;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 25px;
+
+}
+
+
+/* BIGGER LOGO */
+
+.logo {
+
+  font-size: 42px;   /* bigger */
+  font-weight: bold;
+
+}
+
+
+/* LINKS */
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: underline;
+
+  margin-left: 20px;
+
+  font-size: 18px;
+
+}
+
+
+.nav-links a:hover {
+
+  color: #ffd700;
+
+}

@@ -1,0 +1,164 @@
+2026-03-23 19:58:55.757 CET [15649] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 19:58:55.759 CET [15649] LOG:  could not bind IPv6 address "::1": Address already in use
+2026-03-23 19:58:55.759 CET [15649] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-03-23 19:58:55.759 CET [15649] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2026-03-23 19:58:55.759 CET [15649] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-03-23 19:58:55.759 CET [15649] WARNING:  could not create listen socket for "localhost"
+2026-03-23 19:58:55.759 CET [15649] FATAL:  could not create any TCP/IP sockets
+2026-03-23 19:58:55.759 CET [15649] LOG:  database system is shut down
+2026-03-23 20:00:43.576 CET [16056] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:00:43.577 CET [16056] LOG:  could not bind IPv6 address "::1": Address already in use
+2026-03-23 20:00:43.577 CET [16056] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-03-23 20:00:43.577 CET [16056] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2026-03-23 20:00:43.577 CET [16056] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-03-23 20:00:43.577 CET [16056] WARNING:  could not create listen socket for "localhost"
+2026-03-23 20:00:43.577 CET [16056] FATAL:  could not create any TCP/IP sockets
+2026-03-23 20:00:43.577 CET [16056] LOG:  database system is shut down
+2026-03-23 20:02:15.796 CET [16353] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:02:15.797 CET [16353] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-23 20:02:15.797 CET [16353] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-23 20:02:15.798 CET [16353] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-03-23 20:02:15.800 CET [16359] LOG:  database system was shut down at 2026-03-23 19:58:33 CET
+2026-03-23 20:02:15.801 CET [16353] LOG:  database system is ready to accept connections
+2026-03-23 20:03:08.600 CET [16461] FATAL:  role "postgres" does not exist
+2026-03-23 20:06:00.089 CET [17043] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:06:00.090 CET [17043] LOG:  could not bind IPv6 address "::1": Address already in use
+2026-03-23 20:06:00.090 CET [17043] HINT:  Is another postmaster already running on port 5433? If not, wait a few seconds and retry.
+2026-03-23 20:06:00.090 CET [17043] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2026-03-23 20:06:00.090 CET [17043] HINT:  Is another postmaster already running on port 5433? If not, wait a few seconds and retry.
+2026-03-23 20:06:00.090 CET [17043] WARNING:  could not create listen socket for "localhost"
+2026-03-23 20:06:00.090 CET [17043] FATAL:  could not create any TCP/IP sockets
+2026-03-23 20:06:00.090 CET [17043] LOG:  database system is shut down
+2026-03-23 20:06:15.998 CET [16353] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-03-23 20:06:15.998 CET [16353] LOG:  performing immediate shutdown because data directory lock file is invalid
+2026-03-23 20:06:15.999 CET [16353] LOG:  received immediate shutdown request
+2026-03-23 20:06:15.999 CET [16353] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-03-23 20:06:16.005 CET [16353] LOG:  database system is shut down
+2026-03-23 20:06:48.407 CET [17190] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:06:48.409 CET [17190] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-23 20:06:48.409 CET [17190] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-23 20:06:48.409 CET [17190] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-03-23 20:06:48.411 CET [17196] LOG:  database system was shut down at 2026-03-23 20:05:45 CET
+2026-03-23 20:06:48.412 CET [17190] LOG:  database system is ready to accept connections
+2026-03-23 20:07:17.347 CET [17296] FATAL:  database "divyanshchawlaa" does not exist
+2026-03-23 20:07:51.353 CET [17391] FATAL:  role "uniflights" does not exist
+2026-03-23 20:08:05.139 CET [17474] FATAL:  role "postgres" does not exist
+2026-03-23 20:09:33.427 CET [17862] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:09:33.428 CET [17862] LOG:  could not bind IPv6 address "::1": Address already in use
+2026-03-23 20:09:33.428 CET [17862] HINT:  Is another postmaster already running on port 5433? If not, wait a few seconds and retry.
+2026-03-23 20:09:33.429 CET [17862] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2026-03-23 20:09:33.429 CET [17862] HINT:  Is another postmaster already running on port 5433? If not, wait a few seconds and retry.
+2026-03-23 20:09:33.429 CET [17862] WARNING:  could not create listen socket for "localhost"
+2026-03-23 20:09:33.429 CET [17862] FATAL:  could not create any TCP/IP sockets
+2026-03-23 20:09:33.429 CET [17862] LOG:  database system is shut down
+2026-03-23 20:09:38.648 CET [17991] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:09:38.649 CET [17991] LOG:  could not bind IPv6 address "::1": Address already in use
+2026-03-23 20:09:38.649 CET [17991] HINT:  Is another postmaster already running on port 5433? If not, wait a few seconds and retry.
+2026-03-23 20:09:38.649 CET [17991] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2026-03-23 20:09:38.649 CET [17991] HINT:  Is another postmaster already running on port 5433? If not, wait a few seconds and retry.
+2026-03-23 20:09:38.649 CET [17991] WARNING:  could not create listen socket for "localhost"
+2026-03-23 20:09:38.649 CET [17991] FATAL:  could not create any TCP/IP sockets
+2026-03-23 20:09:38.649 CET [17991] LOG:  database system is shut down
+2026-03-23 20:09:48.625 CET [17190] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-03-23 20:09:48.625 CET [17190] LOG:  performing immediate shutdown because data directory lock file is invalid
+2026-03-23 20:09:48.625 CET [17190] LOG:  received immediate shutdown request
+2026-03-23 20:09:48.625 CET [17190] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-03-23 20:09:48.631 CET [17190] LOG:  database system is shut down
+2026-03-23 20:11:21.321 CET [18869] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:11:21.323 CET [18869] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-23 20:11:21.323 CET [18869] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-23 20:11:21.323 CET [18869] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-03-23 20:11:21.326 CET [18875] LOG:  database system was shut down at 2026-03-23 20:11:08 CET
+2026-03-23 20:11:21.327 CET [18869] LOG:  database system is ready to accept connections
+2026-03-23 20:12:00.712 CET [19048] FATAL:  database "divyanshchawlaa" does not exist
+2026-03-23 20:13:21.370 CET [18869] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-03-23 20:13:21.370 CET [18869] LOG:  performing immediate shutdown because data directory lock file is invalid
+2026-03-23 20:13:21.371 CET [18869] LOG:  received immediate shutdown request
+2026-03-23 20:13:21.371 CET [18869] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-03-23 20:13:21.375 CET [18869] LOG:  database system is shut down
+2026-03-23 20:13:40.546 CET [19922] LOG:  starting PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit
+2026-03-23 20:13:40.547 CET [19922] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-23 20:13:40.547 CET [19922] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-23 20:13:40.548 CET [19922] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-03-23 20:13:40.551 CET [19928] LOG:  database system was shut down at 2026-03-23 20:13:27 CET
+2026-03-23 20:13:40.552 CET [19922] LOG:  database system is ready to accept connections
+2026-03-23 20:15:28.961 CET [20132] FATAL:  database "divyanshchawlaa" does not exist
+2026-03-23 20:18:40.549 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 20:18:45.408 CET [19926] LOG:  checkpoint complete: wrote 48 buffers (0.3%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.854 s, sync=0.003 s, total=4.860 s; sync files=15, longest=0.001 s, average=0.001 s; distance=337 kB, estimate=337 kB; lsn=0/17DF7D0, redo lsn=0/17DF778
+2026-03-23 20:20:31.069 CET [20376] FATAL:  database "uniflights" does not exist
+2026-03-23 20:23:40.407 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 20:25:20.108 CET [19926] LOG:  checkpoint complete: wrote 986 buffers (6.0%), wrote 1 SLRU buffers; 1 WAL file(s) added, 0 removed, 0 recycled; write=99.677 s, sync=0.016 s, total=99.701 s; sync files=315, longest=0.001 s, average=0.001 s; distance=4500 kB, estimate=4500 kB; lsn=0/1C44B60, redo lsn=0/1C44AD0
+2026-03-23 21:05:30.943 CET [22400] FATAL:  database "uniflights" does not exist
+2026-03-23 21:05:56.435 CET [22497] ERROR:  relation "universities" already exists
+2026-03-23 21:05:56.435 CET [22497] STATEMENT:  CREATE TABLE universities (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(255) NOT NULL,
+	    email_domain VARCHAR(255) UNIQUE NOT NULL
+	);
+2026-03-23 21:05:56.436 CET [22497] ERROR:  relation "users" already exists
+2026-03-23 21:05:56.436 CET [22497] STATEMENT:  CREATE TABLE users (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(100),
+	    email VARCHAR(100) UNIQUE NOT NULL,
+	    password_hash VARCHAR(255) NOT NULL,
+	    university_id INTEGER REFERENCES universities(id),
+	    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	);
+2026-03-23 21:08:40.127 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 21:08:42.073 CET [19926] LOG:  checkpoint complete: wrote 19 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.936 s, sync=0.005 s, total=1.946 s; sync files=22, longest=0.001 s, average=0.001 s; distance=64 kB, estimate=4057 kB; lsn=0/1C54F08, redo lsn=0/1C54E78
+2026-03-23 21:13:40.072 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 21:13:41.494 CET [19926] LOG:  checkpoint complete: wrote 14 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.417 s, sync=0.002 s, total=1.422 s; sync files=12, longest=0.001 s, average=0.001 s; distance=33 kB, estimate=3654 kB; lsn=0/1C5D628, redo lsn=0/1C5D5D0
+2026-03-23 21:38:40.509 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 21:38:40.615 CET [19926] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.001 s, total=0.107 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=3289 kB; lsn=0/1C5D850, redo lsn=0/1C5D7F8
+2026-03-23 21:48:07.547 CET [24477] FATAL:  database "uniflights" does not exist
+2026-03-23 21:49:26.358 CET [24598] ERROR:  role "postgres" already exists
+2026-03-23 21:49:26.358 CET [24598] STATEMENT:  CREATE ROLE postgres WITH LOGIN SUPERUSER PASSWORD 'your_password_here';
+2026-03-23 21:51:25.387 CET [24598] ERROR:  relation "universities" already exists
+2026-03-23 21:51:25.387 CET [24598] STATEMENT:  CREATE TABLE universities (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(100),
+	    email_domain VARCHAR(50),
+	    country VARCHAR(50)
+	);
+2026-03-23 21:51:25.389 CET [24598] ERROR:  relation "users" already exists
+2026-03-23 21:51:25.389 CET [24598] STATEMENT:  CREATE TABLE users (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(100),
+	    email VARCHAR(100) UNIQUE,
+	    password_hash TEXT,
+	    university_id INT REFERENCES universities(id),
+	    verified BOOLEAN DEFAULT FALSE,
+	    role VARCHAR(20) DEFAULT 'student',
+	    created_at TIMESTAMP DEFAULT NOW()
+	);
+2026-03-23 21:53:12.587 CET [24598] ERROR:  syntax error at or near "SELECT" at character 28
+2026-03-23 21:53:12.587 CET [24598] STATEMENT:  select * from universities
+	SELECT count(*) FROM universities;
+2026-03-23 21:53:40.617 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 21:55:24.399 CET [19926] LOG:  checkpoint complete: wrote 1026 buffers (6.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=103.763 s, sync=0.016 s, total=103.783 s; sync files=363, longest=0.001 s, average=0.001 s; distance=4711 kB, estimate=4711 kB; lsn=0/2105890, redo lsn=0/20F75C8
+2026-03-23 21:57:03.755 CET [25014] ERROR:  relation "universities" already exists
+2026-03-23 21:57:03.755 CET [25014] STATEMENT:  CREATE TABLE universities (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(100),
+	    email_domain VARCHAR(50),
+	    country VARCHAR(50)
+	);
+2026-03-23 21:57:03.756 CET [25014] ERROR:  relation "users" already exists
+2026-03-23 21:57:03.756 CET [25014] STATEMENT:  CREATE TABLE users (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(100),
+	    email VARCHAR(100) UNIQUE,
+	    password_hash TEXT,
+	    university_id INT REFERENCES universities(id),
+	    verified BOOLEAN DEFAULT FALSE,
+	    role VARCHAR(20) DEFAULT 'student',
+	    created_at TIMESTAMP DEFAULT NOW()
+	);
+2026-03-23 21:58:40.401 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 21:58:44.681 CET [19926] LOG:  checkpoint complete: wrote 42 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.271 s, sync=0.006 s, total=4.280 s; sync files=39, longest=0.001 s, average=0.001 s; distance=146 kB, estimate=4254 kB; lsn=0/211BE20, redo lsn=0/211BDC8
+2026-03-23 22:13:40.708 CET [19926] LOG:  checkpoint starting: time
+2026-03-23 22:13:41.224 CET [19926] LOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.508 s, sync=0.002 s, total=0.516 s; sync files=6, longest=0.001 s, average=0.001 s; distance=4 kB, estimate=3829 kB; lsn=0/211D150, redo lsn=0/211D0F8
+2026-03-24 00:26:33.722 CET [19926] LOG:  checkpoint starting: time
+2026-03-24 00:26:38.817 CET [19926] LOG:  checkpoint complete: wrote 50 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=5.087 s, sync=0.004 s, total=5.095 s; sync files=42, longest=0.001 s, average=0.001 s; distance=178 kB, estimate=3464 kB; lsn=0/2149CA8, redo lsn=0/2149C18
+2026-03-24 07:09:51.004 CET [19926] LOG:  checkpoint starting: time
+2026-03-24 07:09:55.193 CET [19926] LOG:  checkpoint complete: wrote 41 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.183 s, sync=0.004 s, total=4.190 s; sync files=39, longest=0.001 s, average=0.001 s; distance=169 kB, estimate=3135 kB; lsn=0/21741F0, redo lsn=0/2174198
